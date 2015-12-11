@@ -1,0 +1,16 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/app.css')
+		script(src="/javascripts/app.js")
+	body
+		block content
+		.invisible-with-small-viewport
+			p invisible-with-small-viewport
+		.invisible-with-medium-viewport
+			p invisible-with-medium-viewport
+		h2 nest-css demo
+		.parent-div .parent-div
+			.child-div .child-div

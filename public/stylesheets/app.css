@@ -1,0 +1,36 @@
+a {
+    color: red;
+}
+
+html, body {
+    color: black;
+    color: blue;
+}
+
+@media (max-width: 300px) {
+    .invisible-with-small-viewport {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .invisible-with-medium-viewport {
+        display: none;
+    }
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+    margin-bottom: 15px;
+}
+
+.parent-div .child-div {
+    background: #000;
+    color: #fff;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZXNoZWV0cy9hcHAuY3NzIiwic291cmNlUm9vdCI6IiJ9*/

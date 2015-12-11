@@ -1,0 +1,50 @@
+:root {
+    --accent-color: red; 
+    --base-color: blue;
+}
+
+a {
+    color: var(--accent-color);
+}
+
+html, body {
+    color: var(--base-color, black);
+}
+
+@custom-media --small-viewport (max-width: 300px);
+
+@media (--small-viewport) {
+    .invisible-with-small-viewport {
+        display: none;
+    }
+}
+
+@custom-media --medium-viewport (width <= 600px);
+
+@media (--medium-viewport) {
+    .invisible-with-medium-viewport {
+        display: none;
+    }
+}
+
+@custom-selector :--heading h1, h2, h3, h4, h5, h6;
+
+:--heading + p {
+    margin-bottom: 15px;
+}
+
+
+@define-mixin social-icon $color {
+    background: $color;
+    &:hover {
+        background: color($color whiteness(+10%));
+    }
+}
+.parent-div {
+	@mixin social-icon #55acee;
+	
+	.child-div {
+		background: #000;
+		color: #fff;
+	}
+}
