@@ -13,7 +13,7 @@
     "express": "~4.13.1",
     "extract-text-webpack-plugin": "^0.9.1",
     "jade": "~1.11.0",
-    "morgan": "~1.6.1",
+    "morgan": "~1.10.0",
     "postcss-cssnext": "^2.2.0",
     "postcss-define-property": "^0.3.1",
     "postcss-mixins": "^3.0.2",
